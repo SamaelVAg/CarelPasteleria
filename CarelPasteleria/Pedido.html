@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenes</title>
+</head>
+<body>
+    <img src="./assets/img/Carel.png" alt="Carel Pastelería" width="200px" height="200px">
+    <h1>Pastelería Carel</h1>
+    <h2>Realiza tu pedido</h2>
+
+    <form action="orden.js">
+        <h3>Datos de contacto</h3>
+        <label for="nombre">Nombre completo:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo">
+        <br><br>
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" placeholder="Dirección">
+        <br>
+        <label for="celular">Número de celular:</label>
+        <input type="tel" id="cel" name="celular" placeholder="Número a 10 digitos">
+        <br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="example@example.com">
+
+        <h3>Pedido</h3>
+       
+        <p>Selecciona tu pastel</p>
+        <input type="radio" id="sencillo" name="Pastcom" value="sencillo">
+        <label for="sencillo">Sencillo</label>
+        <input type="radio" id="combinado" name="Pastcom" value="combinado">
+        <label for="combinado">Combinado</label>
+        <br>
+        <label for="pastel1">Selecciona el sabor</label>
+        <select id="pastel1" name="pastel1">
+            <option value="op0">--Selecciona--</option>
+            <option value="op1">Coco/cajeta</option>
+            <option value="op2">Chocolate</option>
+            <option value="op3">Moka</option>
+            <option value="op4">Vainilla/durazno</option>
+            <option value="op5">Marmoleado</option>
+            <option value="op6">Pay de uva</option>
+        </select><br>
+        <label for="pastel2">Selecciona el sabor de la combinación</label>
+        <select id="pastel2" name="pastel1">
+            <option value="op0">--Selecciona--</option>
+            <option value="op1">Coco/cajeta</option>
+            <option value="op2">Chocolate</option>
+            <option value="op3">Moka</option>
+            <option value="op4">Vainilla/durazno</option>
+            <option value="op5">Marmoleado</option>
+        </select><br><br>
+        
+        <p>Añade tus toppings (Recuerda que puedes seleccionar hasta 3)</p>
+        <label for="topping1">Selecciona el primer topping</label>
+        <select id="topping1" name="topping1">
+            <option value="top0">--Selecciona--</option>
+            <option value="top1">Fruta de temporada</option>
+            <option value="top2">Chispas de chocolate</option>
+            <option value="top3">Chispas de colores</option>
+            <option value="top4">Cerezas</option>
+            <option value="top5">Fresas</option>
+            <option value="top6">Nueces</option>
+            <option value="top7">M&M's</option>
+            <option value="top8">Azúcar glass</option>
+            <option value="top9">Chantilly</option>
+        </select><br>
+        <label for="topping2">Selecciona el segundo topping</label>
+        <select id="topping2" name="topping2">
+            <option value="top0">--Selecciona--</option>
+            <option value="top1">Fruta de temporada</option>
+            <option value="top2">Chispas de chocolate</option>
+            <option value="top3">Chispas de colores</option>
+            <option value="top4">Cerezas</option>
+            <option value="top5">Fresas</option>
+            <option value="top6">Nueces</option>
+            <option value="top7">M&M's</option>
+            <option value="top8">Azúcar glass</option>
+            <option value="top9">Chantilly</option>
+        </select><br>
+        <label for="topping3">Selecciona el tercer topping</label>
+        <select id="topping3" name="topping3">
+            <option value="top0">--Selecciona--</option>
+            <option value="top1">Fruta de temporada</option>
+            <option value="top2">Chispas de chocolate</option>
+            <option value="top3">Chispas de colores</option>
+            <option value="top4">Cerezas</option>
+            <option value="top5">Fresas</option>
+            <option value="top6">Nueces</option>
+            <option value="top7">M&M's</option>
+            <option value="top8">Azúcar glass</option>
+            <option value="top9">Chantilly</option>
+        </select><br><br>
+        
+        <p>Selecciona tus complementos</p>
+        <input type="checkbox" id="comp1" name="comp1" value="Velitas mágicas">
+        <label for="comp1">Velitas mágicas</label><br>
+        <input type="checkbox" id="comp2" name="comp2" value="Velita número">
+        <label for="comp2">Velita número</label><br>
+        <input type="checkbox" id="comp3" name="comp3" value="Velita sorpresa">
+        <label for="comp3">Velita sorpresa</label><br>
+        <input type="checkbox" id="comp4" name="comp4" value="Velita humo">
+        <label for="comp4">Velita humo</label><br>
+        <input type="checkbox" id="comp5" name="comp5" value="Letreros pastel">
+        <label for="comp5">Letreros pastel</label><br>
+        <input type="checkbox" id="comp6" name="comp6" value="Letreros pared">
+        <label for="comp6">Letreros pared</label><br>
+        <input type="checkbox" id="comp7" name="comp7" value="Cortina decorativa">
+        <label for="comp7">Cortina decorativa</label><br>
+        <label for="globos">Número de globos:</label>
+        <input type="number" id="globos" name="globos">
+        <br><br>
+        <input type="submit" value="Pedir">
+        <input type="reset" value="Limpiar">
+        <br><br>
+
+    </form>
+
+</body>
+</html>
